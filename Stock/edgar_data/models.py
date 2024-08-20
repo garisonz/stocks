@@ -22,3 +22,10 @@ class Company(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.ticker})"
+    
+class Filing(models.Model):
+    file_date = models.CharField(max_length=15)
+    file_type = models.CharField(max_length=8)
+
+    def __str__(self):
+        return 
